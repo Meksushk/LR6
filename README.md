@@ -132,3 +132,24 @@ git checkout -b report
 ![Создание ветки для отчёта](branch_report.png)
 
 ---
+
+## 15. Получить историю операций в форматированном виде (сокращённый хэш + дата + имя автора + комментарий)
+git log --pretty=format:"%h %ad | %an | %s" --date=short
+
+6353f1f 2025-11-15 | Ksenia Bolotskikh | Добавлены скриншоты в отчёт
+a071c72 2025-11-15 | Ksenia Bolotskikh | Добавлен порядок выполнения лабораторной работы в отчёт
+39516dd 2025-11-15 | Ksenia Bolotskikh | Добавлена папка со скриншотами
+be6d9f9 2025-11-15 | Ksenia Bolotskikh | Revert "Четвёртое изменение"
+c303ed0 2025-11-15 | Ksenia Bolotskikh | Четвёртое изменение
+c99cb46 2025-11-15 | Ksenia Bolotskikh | Третье изменение
+3e87d87 2025-11-15 | Ksenia Bolotskikh | Второе изменение
+89ade8d 2025-11-15 | Ksenia Bolotskikh | Первое изменение
+d85fe09 2025-11-15 | Ksenia Bolotskikh | Merge branch 'dev'
+7b469d3 2025-11-15 | Ksenia Bolotskikh | master
+513a7f7 2025-11-15 | Ksenia Bolotskikh | new branch
+d5eea41 2025-11-15 | Ksenia Bolotskikh | Create New file
+921f53b 2020-11-21 | Kurtyanik | Обновление информации
+c08a654 2020-11-21 | Kurtyanik | Файл создан пустым
+3c6e913 2020-11-21 | Kurtyanik | Initial commit
+
+---

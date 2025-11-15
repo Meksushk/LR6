@@ -22,6 +22,8 @@
 Исходный репозиторий: https://github.com/Kurtyanik/LR6/
 С помощью кнопки Fork была создана личная копия репозитория в своём профиле
 
+![Форк репозитория](fork.png)
+
 ---
 
 ## 3. Установить Git
@@ -33,10 +35,14 @@ Git был установлен с официального сайта: https://
 git config --global user.name "Ksenia Bolotskikh"
 git config --global user.email "madam.bolotsckix2017@yandex.ru"
 
+![Просмотр информации о клиенте](git_config.png)
+
 ---
 
 ## 5. Клонировать свой личный удалённый репозиторий на компьютер
 git clone https://github.com/Meksushk/LR6/
+
+![Клон удалённого репозитория](clone.png)
 
 ---
 
@@ -45,34 +51,52 @@ git clone https://github.com/Meksushk/LR6/
  2. Изменения получены локально:
 git pull https://github.com/Meksushk/LR6/
 
+![Получение изменений из удалённого репозитория](pull.png)
+
 --- 
 
 ## 7. Получить историю операций для каждой из веток
 git log
+
+![История изменений](log.png)
 
 ---
 
 ## 8. Просмотреть последние изменения
 git status
 
+![Последние изменения](status.png)
+
 ---
 
 ## 9. Выполнить слияние в ветку master и разрешить конфликт
  1. Создать побочную ветку
  git checkout -b dev
+
  2. Сделать любые изменения
+ ![Изменения в ветке dev](commit1.png)
+
  3. Сделать коммит
  git add .
  git commit -m "Изменения в ветке dev"
+
  4. Перейти в ветку master
  git checkout master
+
  5. Сделать изменения в том же файле
+ ![Изменения в ветке master](commit2.png)
+
  6. Сделать коммит
  git add .
  git commit -m "Изменения в ветке master"
+
  7. Выполнить merge 
  git merge dev
+ ![Конфликт](conflict.png)
+
  8. Разрешить конфликт и оставить в файле только нужные изменения
+ ![Решение конфликта](conflict_resolution.png)
+
  9. Завершить слияние
  git add New file
  git commit
@@ -82,6 +106,8 @@ git status
 ## 10. Удалить побочную ветку после успешного слияния
 git branch -d dev
 
+![Удаление ветки](del_branch.png)
+
 ---
 
 ## 11. Сделать изменения и зафиксировать их несколько раз с комментариями
@@ -89,14 +115,20 @@ git add .
 git commit -m "Комментарий к коммиту"
 Всего было сделано 4 изменения и коммита.
 
+![Коммиты](commits.png)
+
 ---
 
 ## 12. Сделать откат коммита 
 git revert <хэш коммита>
 
+![Откат последнего коммита](revert.png)
+
 ---
 
 ## 13. Создать ветку для отчёта 
 git checkout -b report 
+
+![Создание ветки для отчёта](branch_report.png)
 
 ---
